@@ -62,7 +62,8 @@ section{padding:6rem 2rem}
 /* ── ABOUT ── */
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;max-width:1000px;margin:0 auto;align-items:center}
 .about-visual{position:relative;aspect-ratio:4/5;border-radius:8px;overflow:hidden;background:linear-gradient(135deg,var(--surface),var(--card));border:1px solid var(--border)}
-.about-visual::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(192,57,43,.15),rgba(201,168,76,.08))}
+.about-visual::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(192,57,43,.1),transparent 60%);z-index:1;pointer-events:none}
+.about-visual img{width:100%;height:100%;object-fit:cover;display:block}
 .about-visual .initials{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',Impact,sans-serif;font-size:8rem;letter-spacing:.1em;color:rgba(192,57,43,.12)}
 .about-text h3{font-size:2rem;margin-bottom:1rem}
 .about-text h3 span{color:var(--gold)}
@@ -244,7 +245,7 @@ footer .socials a:hover{border-color:var(--crimson);color:var(--crimson)}
   </div>
   <div class="about-grid">
     <div class="about-visual reveal">
-      <div class="initials">RB</div>
+      <img src="assets/rapturebeatz-portrait.png" alt="RaptureBeatz Portrait">
     </div>
     <div class="about-text reveal">
       <h3>Sound is <span>Architecture</span></h3>
